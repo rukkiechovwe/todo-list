@@ -3,9 +3,11 @@
 
 <head>
     <title>My Todo App</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
+	
     <!-- Navigation Bar -->
     <nav>
         <div class="logo">
@@ -19,82 +21,25 @@
     </nav>
     <div class="container">
         <!-- Todo App -->
-        <div class="todo-list">
-            <ul>
-                <li>
-                    <div class="todo-item">
-                        <div class="todo-details">
-                            <div class="todo-title">Todo Title</div>
-                            <div class="todo-description">Todo Description</div>
-                            <div class="todo-deadline">Today</div>
-                        </div>
-                        <div class="todo-tools">
-                            <a href="#">Edit</a> |
-                            <a href="#">Delete</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="todo-item">
-                        <div class="todo-details">
-                            <div class="todo-title">Todo Title</div>
-                            <div class="todo-description">Todo Description</div>
-                            <div class="todo-deadline">Today</div>
-                        </div>
-                        <div class="todo-tools">
-                            <a href="#">Edit</a> |
-                            <a href="#">Delete</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="todo-item">
-                        <div class="todo-details">
-                            <div class="todo-title">Todo Title</div>
-                            <div class="todo-description">Todo Description</div>
-                            <div class="todo-deadline">Today</div>
-                        </div>
-                        <div class="todo-tools">
-                            <a href="#">Edit</a> |
-                            <a href="#">Delete</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="todo-item">
-                        <div class="todo-details">
-                            <div class="todo-title">Todo Title</div>
-                            <div class="todo-description">Todo Description</div>
-                            <div class="todo-deadline">Today</div>
-                        </div>
-                        <div class="todo-tools">
-                            <a href="#">Edit</a> |
-                            <a href="#">Delete</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="todo-item">
-                        <div class="todo-details">
-                            <div class="todo-title">Todo Title</div>
-                            <div class="todo-description">Todo Description</div>
-                            <div class="todo-deadline">Today</div>
-                        </div>
-                        <div class="todo-tools">
-                            <a href="#">Edit</a> |
-                            <a href="#">Delete</a>
-                        </div>
-                    </div>
-                </li>
+        <h2>Add Task</h2>
+        <div id="list" class="todo-list">
+            <ul id="myList">
+                
             </ul>
         </div>
         <form class="add-todo">
-            <input class="input-textbox" type="text" placeholder="add new todo">
-            <input class="btn submit-btn" type="submit">
+            <input id="addTaskInput" class="input-textbox" type="text" placeholder="add new task">
+            <textarea id="addDescriptionInput" class="input-textbox" placeholder="add task Description"></textarea>
+            <input type="date" id="addDeadline" class="input-textbox">
             <br />
-            <a class="link" href="#">add more details</a>
+            <a id="addMore" class="link" href="#">add more details</a>
+           <a id="hideMore" class="link" href="#">hide more details</a>
+            <input id="updateButton" class="submit-btn" type="button" value="update"><p id="p">ufydtt</p>
+            <input id="enterButton" class="submit-btn" type="button" value="add task">
         </form>
     </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
